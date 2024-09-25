@@ -1006,8 +1006,8 @@ sleep 3
 
     # Step 3: Checking page reflection on the URLs
 if [ -f "reflection.py" ]; then
-    echo -e "${BOLD_WHITE}Checking page reflection on the URLs with command: python reflection.py ${domain_name}-query.txt --threads 2${NC}"
-    python reflection.py "${domain_name}-query.txt" --threads 2 || handle_error "reflection.py execution"
+    echo -e "${BOLD_WHITE}Checking page reflection on the URLs with command: python3 reflection.py ${domain_name}-query.txt --threads 2${NC}"
+    python3 reflection.py "${domain_name}-query.txt" --threads 2 || handle_error "reflection.py execution"
     sleep 5
 
     # Check if xss.txt is created after reflection.py
